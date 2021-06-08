@@ -43,3 +43,17 @@
 	width: 150px;
 	margin: 10px;
 }
+
+@media (max-width: 1024px) {
+	.project-title {
+		font-size: 1.3em;
+	}
+
+	.modal-dialog{
+		max-width: 75%;
+	}
+
+	#galleryModal {
+		top: 20%;
+	}
+}

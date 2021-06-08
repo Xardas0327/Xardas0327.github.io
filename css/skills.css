@@ -5,3 +5,9 @@
 .accordion{
 	margin-top: 20px;
 }
+
+@media (max-width: 1024px) {
+	.skill-title {
+		font-size: 1.3em;
+	}
+}

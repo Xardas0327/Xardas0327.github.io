@@ -13,6 +13,7 @@ body {
 .description {
 	width: 80%;
 	margin: auto;
+	text-align: justify;
 }
 
 .small-title {
@@ -26,4 +27,22 @@ body {
 
 .back-button {
 	width: 150px;
+}
+
+@media (max-width: 1024px) {
+	body {
+		font-size: 1.2em;
+	}
+	
+	.card-title {
+		font-size: 1.5em;
+	}
+	
+	.container {
+		max-width: 850px;
+	}
+	
+	.description {
+		width: 100%;
+	}
 }

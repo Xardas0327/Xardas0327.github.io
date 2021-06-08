@@ -13,3 +13,9 @@
 #phpNote {
 	margin: 30px 5px 10px 5px;
 }
+
+@media (max-width: 1024px) {
+	.job-title {
+		font-size: 1.1em;
+	}
+}
