@@ -29,7 +29,7 @@ body {
 	width: 150px;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 	body {
 		font-size: 1.2em;
 	}
