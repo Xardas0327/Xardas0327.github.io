@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Xardas0327 - Projects</title>
+		<meta charset="UTF-8">
+		<script src="plugins/bootstrap-5.0.1/js/bootstrap.min.js"></script>
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/gallery.js"></script>
+		<script src="js/accordion.js"></script>
+		<link rel="stylesheet" href="plugins/bootstrap-5.0.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="plugins/fontawesome-free-5.15.3-web/css/all.min.css">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/projects.css">
+	</head>
+	<body>
+		<div class="main">
+			<div class="container">
+				<div class="row">
+					<div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-body">
+									<img id="imageModal" />
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" id="previousButton">
+										<i class="fa fa-arrow-left"></i>
+									</button>
+									<button type="button" class="btn btn-secondary" id="nextButton">
+										<i class="fas fa-arrow-right"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="card description">
+						  <div class="card-body">
+							<h3 class="card-title">Projects</h3>
+							<p class="card-text">
+								The commercial experience and the education are important. But I think I have to write code in my freetime too,
+								if I want to learn more or just explore something new.
+							</p>
+							<p class="card-text">
+								In this page, I want to show my bigger/smaller projects, which I work(ed) in my life.
+							</p>
+							<p class="card-text">
+								If you want, you can check my <a href="experience.html" class="link-primary">experience</a> and
+								<a href="skills.html" class="link-primary">skills</a> too.
+							</p>
+						  </div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="card description">
+							<div class="card-body">
+								<h3 class="card-title small-title">Current</h3>
+								<div class="accordion" id="accordionCurrent">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="bearventure">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bearventureContent" aria-expanded="false" aria-controls="collapseOne">
+												<div class="project-title">
+													Bearventure
+												</div>
+											</button>
+										</h2>
+										<div id="bearventureContent" class="accordion-collapse collapse" aria-labelledby="bearventure" data-bs-parent="#accordionCurrent">
+											<div class="accordion-body">
+												<p>
+													I develop a game with a small independent team with <b>Unity</b>, where I am the lead developer, because
+													I have the most experience with <b>C#</b> and software design/development. It will be a <b>2D side scroller game with some RPG element,
+													like gear or player level system</b>.
+												</p>
+												<p>
+													Currently, I can't say or show more about this project. I will do it, when it is time. Please check my other projects.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="card description">
+							<div class="card-body">
+								<h3 class="card-title small-title">Published</h3>
+								<div class="accordion" id="accordionPublished">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="excapeLabyrinth">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#excapeLabyrinthContent" aria-expanded="false" aria-controls="collapseOne">
+												<div class="project-title">
+													EXcape LabyRinth
+												</div>
+											</button>
+										</h2>
+										<div id="excapeLabyrinthContent" class="accordion-collapse collapse" aria-labelledby="excapeLabyrinth" data-bs-parent="#accordionPublished">
+											<div class="accordion-body">
+												<div class="gallery bigger">
+													<img src="files/images/ExcapeLabyrinth/image1.jpg" alt="Excape Labyrinth Image 1" data-index="1"/>
+													<img src="files/images/ExcapeLabyrinth/image2.jpg" alt="Excape Labyrinth Image 2" data-index="2"/>
+													<img src="files/images/ExcapeLabyrinth/image3.jpg" alt="Excape Labyrinth Image 3" data-index="3"/>
+													<img src="files/images/ExcapeLabyrinth/image4.jpg" alt="Excape Labyrinth Image 4" data-index="4"/>
+													<img src="files/images/ExcapeLabyrinth/image5.jpg" alt="Excape Labyrinth Image 5" data-index="5"/>
+													<img src="files/images/ExcapeLabyrinth/image6.png" alt="Excape Labyrinth Image 6" data-index="6"/>
+													<img src="files/images/ExcapeLabyrinth/image7.png" alt="Excape Labyrinth Image 7" data-index="7"/>
+													<img src="files/images/ExcapeLabyrinth/image8.png" alt="Excape Labyrinth Image 8" data-index="8"/>
+													<img src="files/images/ExcapeLabyrinth/image9.png" alt="Excape Labyrinth Image 9" data-index="9"/>
+												</div>
+												<p>
+													This is a <b>cooperative game</b>, in which you have to get out of a labyrinth, filled with enemy robots.
+													It is created by <b>Unity</b> and it uses <b>Daydream (Google vr)</b> and <b>ARCore</b>. It appears in Daydream store, 
+													which mean it meets all of the 
+													<a href="https://developers.google.com/vr/distribute/daydream/app-quality" target="_blank"  class="link-primary">
+														<b>Daydream App Quality</b>
+													</a>
+													criteria. It is available in 
+													<a href="https://play.google.com/store/apps/details?id=com.Xardas.LabyrinthXR" target="_blank"  class="link-primary">
+														<b>Google Play Store</b>.
+													</a>
+												</p>
+												<p>
+													The game only works through WiFi, and both players have to be on the same WiFi network (or direct routing has to be
+													set up between the networks). One of players is a prisoner, who play in virtual reality (VR) mode, and the
+													other one is a hacker, who plays in normal mobile mode or augmented reality (AR) mode.
+												</p>
+												<p>
+													The prisoner has to escape the labyrinth within the time limit, while avoiding enemy robots, and following the instructions
+													of their partner. The game requires Cardboard or Daydream and thier assosiated services to play in VR mode. The game can be
+													played while standing. But you can play with Daydream while sitting too.
+												</p>
+												<p>
+													The hacker sees the timer, the health of the prisoner, the map of the labyrinth and whether the selected robot is active or not.
+													The hacker has the ability to shut down a robot for a short time, but this ability has a 30 seconds cooldown.
+													The software needs access to the camera of the phone in order to function properly in AR mode. But you can play without AR now.
+												</p>
+												<p>
+													The enemy robots will attempt to attack the prisoner, and if they notice them, they will recharge significantly faster. However,
+													if the hacker disables the robot, it will forget that it ever saw the prisoner.
+												</p>
+												<p>
+													The Meeting Room is more interesting feature than fun. There is an empty room, where the two players can meet with each other.
+													It requires all of VR and AR requirement. This feature is currently in beta.
+												</p>
+												<p>
+													Unfortunatelly, I had to stop this project (but it is still available), because the Google Shutdown the Daydream platform.
+													Moreover, the Google doesn't care about the Daydream support on Android 11, so it is not 100%, that the game can work. (It works on Pixel 2.)
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="gdNetwork">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gdNetworkContent" aria-expanded="false" aria-controls="collapseOne">
+												<div class="project-title">
+													GDNetwork
+												</div>
+											</button>
+										</h2>
+										<div id="gdNetworkContent" class="accordion-collapse collapse" aria-labelledby="gdNetwork" data-bs-parent="#accordionPublished">
+											<div class="accordion-body">
+												<p>
+													Library for distributing automatic updates of your software from your Google Drive. For example,
+													if you want to create a launcher for your games or other programs, you can use this library
+													instead of renting a server to update the software on user computers. (15 GB of storage is free on Google Drive).
+												</p>
+												<p>
+													It is written in <b>.NET</b> by <b>C#</b>
+													<br/>
+													The code available on
+													<a href="https://github.com/Xardas0327/GDNetwork" target="_blank"  class="link-primary">
+														<b>GitHub</b>.
+													</a>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="ballChallenge">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ballChallengeContent" aria-expanded="false" aria-controls="collapseOne">
+												<div class="project-title">
+													Ball challenge
+												</div>
+											</button>
+										</h2>
+										<div id="ballChallengeContent" class="accordion-collapse collapse" aria-labelledby="ballChallenge" data-bs-parent="#accordionPublished">
+											<div class="accordion-body">
+												<div class="gallery">
+													<img src="files/images/BallChallenge/image1.png" alt="Ball Challenge Image 1" data-index="1"/>
+													<img src="files/images/BallChallenge/image2.png" alt="Ball Challenge Image 2" data-index="2"/>
+													<img src="files/images/BallChallenge/image3.png" alt="Ball Challenge Image 3" data-index="3"/>
+													<img src="files/images/BallChallenge/image4.png" alt="Ball Challenge Image 4" data-index="4"/>
+													<img src="files/images/BallChallenge/image5.png" alt="Ball Challenge Image 5" data-index="5"/>
+												</div>
+												<p>
+													This is my first game, which I have created by <b>Unity</b>. It is a <b>"ball in a maze"</b> game, which was implemented to 
+													<b>mobile phones</b>.
+												</p>
+												<p>
+													<b>Game description</b>: The point of the game is that you have to move the ball to a point (yellow light) by map rotate
+													(phone rotate). The game is complicated by the fact that the mazes have holes and/or some walls are missing. There a check point
+													in the center of every maze, but you have only 3-5 "lifes". So If you lose them you have to start the current map at the beginning.
+												</p>
+												<p>
+													If you complete a maze, the system unlock the next one. But you can play with them more times, because you can collect stars  from all of 8 maps.
+													You get maximum 3 starts on a map:
+													<ul>
+														<li>when you completed the map</li>
+														<li>if you didn't lose any try</li>
+														<li>if you do it in time</li>
+													</ul>
+												</p>
+												<p>
+													I don't feel, it is enough good game, that's why I didn't put it into Google play store. But I share the android apk file 
+													<a href="files/apk/BallChallenge.apk"class="link-primary"><b>here</b></a>.
+													<br/>
+													<b>Requirements:</b> Android 5.0 with accelerometer
+													<br/>
+													<b>Recommand:</b> Android 5.0 with gyroscope (You can change it in the options.)
+												<p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="card description">
+							<div class="card-body">
+								<h3 class="card-title small-title">Projects from education</h3>
+								<div class="accordion" id="accordionEducation">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="gameJam">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gameJamContent" aria-expanded="false" aria-controls="collapseOne">
+												<div class="project-title">
+													Game jam - Epic defence over 9000
+												</div>
+											</button>
+										</h2>
+										<div id="gameJamContent" class="accordion-collapse collapse" aria-labelledby="gameJam" data-bs-parent="#accordionEducation">
+											<div class="accordion-body">
+												<div class="gallery">
+													<img src="files/images/EpicDefenceOver9000/image1.png" alt="Epic Defence Over 9000 Image 1" data-index="1"/>
+													<img src="files/images/EpicDefenceOver9000/image2.png" alt="Epic Defence Over 9000 Image 2" data-index="2"/>
+													<img src="files/images/EpicDefenceOver9000/image3.png" alt="Epic Defence Over 9000 Image 3" data-index="3"/>
+													<img src="files/images/EpicDefenceOver9000/image4.png" alt="Epic Defence Over 9000 Image 4" data-index="4"/>
+													<img src="files/images/EpicDefenceOver9000/image5.png" alt="Epic Defence Over 9000 Image 5" data-index="5"/>
+													<img src="files/images/EpicDefenceOver9000/image6.png" alt="Epic Defence Over 9000 Image 6" data-index="6"/>
+													<img src="files/images/EpicDefenceOver9000/image7.png" alt="Epic Defence Over 9000 Image 7" data-index="7"/>
+												</div>
+												<p>
+													I participated in a Game Jam. There were 9 people and we had 2 days to create a <b>2D tower defense game</b> in <b>Unity</b>.
+													This game is playable on Windows PC and Android. I wrote the castle, which we have to defence it, and the enemy spawn system.
+													Moreover, I designed the last level.
+												</p>
+												<p>
+													<b>Game description</b>: You can create one tower at the beginning on every level. When you kill the enemy, you will get gold 
+													to buy other towers or gems (they are the boosts).
+												</p>
+												<p>
+													Type of gems:
+													<ul>
+														<li>Damage (red)</li>
+														<li>Fire rate (green)</li>
+														<li>Slow-down enemy (blue)</li>
+														<li>Bullets shoot range (purple)</li>
+														<li>Bullets explode range (yellow)</li>
+													</ul>
+												</p>
+												<p>
+													We didn't upload it to any store, But I can share the android apk file
+													<a href="files/apk/EpicDefenceOver9000.apk"class="link-primary"><b>here</b></a>.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="mapDesign">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mapDesignContent" aria-expanded="false" aria-controls="collapseOne">
+												<div class="project-title">
+													Basic Unity developer course - Map Design
+												</div>
+											</button>
+										</h2>
+										<div id="mapDesignContent" class="accordion-collapse collapse" aria-labelledby="mapDesign" data-bs-parent="#accordionEducation">
+											<div class="accordion-body">
+												<div class="gallery">
+													<img src="files/images/UnityCourse/image01.jpg" alt="Unity Course Image 1" data-index="1"/>
+													<img src="files/images/UnityCourse/image02.jpg" alt="Unity Course Image 2" data-index="2"/>
+													<img src="files/images/UnityCourse/image03.jpg" alt="Unity Course Image 3" data-index="3"/>
+													<img src="files/images/UnityCourse/image04.jpg" alt="Unity Course Image 4" data-index="4"/>
+													<img src="files/images/UnityCourse/image05.jpg" alt="Unity Course Image 5" data-index="5"/>
+													<img src="files/images/UnityCourse/image06.jpg" alt="Unity Course Image 6" data-index="6"/>
+													<img src="files/images/UnityCourse/image07.jpg" alt="Unity Course Image 7" data-index="7"/>
+													<img src="files/images/UnityCourse/image08.jpg" alt="Unity Course Image 8" data-index="8"/>
+													<img src="files/images/UnityCourse/image09.jpg" alt="Unity Course Image 9" data-index="9"/>
+													<img src="files/images/UnityCourse/image10.jpg" alt="Unity Course Image 10" data-index="10"/>
+													<img src="files/images/UnityCourse/image11.jpg" alt="Unity Course Image 11" data-index="11"/>
+												</div>
+												<p>
+													I have complated a basic unity course. Where I had to design a map for a 2.5D game.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="gothic">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gothicContent" aria-expanded="false" aria-controls="collapseOne">
+												<div class="project-title">
+													Eötvös Loránd University - Thesis - Gothic MMORPG
+												</div>
+											</button>
+										</h2>
+										<div id="gothicContent" class="accordion-collapse collapse" aria-labelledby="gothic" data-bs-parent="#accordionEducation">
+											<div class="accordion-body">
+												<div class="gallery bigger">
+													<img src="files/images/GothicMmo/image1.jpg" alt="Gothic MMORPG Image 1" data-index="1"/>
+													<img src="files/images/GothicMmo/image2.jpg" alt="Gothic MMORPG Image 2" data-index="2"/>
+													<img src="files/images/GothicMmo/image3.jpg" alt="Gothic MMORPG Image 3" data-index="3"/>
+													<img src="files/images/GothicMmo/image4.jpg" alt="Gothic MMORPG Image 4" data-index="4"/>
+													<img src="files/images/GothicMmo/image5.jpg" alt="Gothic MMORPG Image 5" data-index="5"/>
+												</div>
+												<p>
+													It is built on an older version of a Gothic 2 mod, called
+													<a href="http://gothic-multiplayer.com" target="_blank" class="link-primary">Gothic Multiplayer</a>.
+													I didn't write the mod, I just used it. I only wrote the Lua and SQL files. This was my thesis at university, 
+													but I continued the development for a while.
+												</p>
+												<p>
+													I have implemented:
+													<ul>
+														<li>Account management</li>
+														<li>Character management (character creater, level up, learn)</li>
+														<li>Time (real and game)</li>
+														<li>Friendly NPC (Vendor,Trainer,Speech,Quest)</li>
+														<li>Enemy NPC (animals with AI)</li>
+														<li>Quest</li>
+														<li>Group</li>
+														<li>Role play chat (normal, private, group)</li>
+														<li>World Item</li>
+														<li>Anticheat</li>
+													</ul>
+												</p>
+												<p>
+													Unfortunatelly, I had to stop this project, because I found some bugs in the mod, which I can't fix.
+													Sometimes, when someone die (not matter it is player or NPC) the server shutdown. I am sure, that my code is right, because
+													the server doesn't have any error messege and it can only happen, if someone has a bigger ping in the game. On localhost it never happened.
+													That was one of the reason, that the mod creaters have started to rewrite it from the begining. 
+												</p>
+												<p>
+													Currently THQ holds licence of the game.
+													<br/>
+													This is just a reference work on 
+													<a href="https://github.com/Xardas0327/Gothic-2-MMORPG" target="_blank"  class="link-primary">
+														<b>GitHub</b>.
+													</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="back-div">
+					<a href="index.html" class="btn btn-primary back-button">Back</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

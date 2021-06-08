@@ -1,0 +1,45 @@
+.project-title{
+	font-weight: bold;
+}
+
+.accordion{
+	margin-top: 20px;
+}
+
+.modal-dialog{
+	max-width: 50%;
+}
+
+.modal-body > img{
+	width: 100%;
+}
+
+.modal-footer{
+	display: block;
+}
+
+#previousButton {
+	float: left;
+}
+
+#nextButton {
+	float: right;
+}
+.gallery{
+	height: 125px;
+	max-height: 140px;
+	overflow-x: scroll;
+	white-space: nowrap;
+	margin-bottom: 20px;
+}
+
+.gallery.bigger{
+	height: 140px;
+}
+
+
+.gallery > img{
+	max-height: 100px;
+	width: 150px;
+	margin: 10px;
+}
