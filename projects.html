@@ -90,24 +90,19 @@
 													It is available on <a href="https://github.com/Xardas0327/MLAgentsConfigurationUI" target="_blank"  class="link-primary"><b>Github</b></a>
 												</p>
 												<p>
-													<b>Test Environment:</b>
+													<b>Requirements:</b>
 													<br />
-													It was tested with Unity ML-Agents Release 20 only.
 													<ul>
+														<li>Unity ML-Agents Release 20 and 21.</li>
 														<li>
-															OS
-															<br/>
-															Windows 11<br/>
-															Ubuntu 20.04<br/>
-															MacOS Ventura 13.4.1<br/>
+															OS:
+															<ul>
+																<li>Windows (Tested: Windows 11)</li>
+																<li>Ubuntu (Tested: Ubuntu 20.04)</li>
+																<li>MacOS (Tested: MacOS 13, 14)</li>
+															</ul>
 														</li>
-														<li>
-															Unity
-															<br/>
-															2021.3.29f1<br/>
-															2022.3.7f1<br/>
-															2023.1.9f1<br/>
-														</li>
+														<li>Unity 2021.3.30f1 or later</li>
 													</ul>
 												</p>
 												<p>
@@ -139,15 +134,37 @@
 															Run Command Line
 															<br/>
 															Firstly, it has to be configureated. It is in <i>Project Settings/ML-Agents Configuration</i>.
-															If a user use <i>Python Virtual Environment</i>, they have to add the <i>activate</i> file.
-															When a user want to run the <i>mlagents-learn</i> command, 
-															they have to select a yaml file and they can add the parameters of command.
+															The users can use <i>Python Virtual Environment</i>, if they want. <br/>
+															There are 3 options:
+															<ul>
+																<li><u>None</u>: The user don't use Virtual Environment.</li>
+																<li>
+																	<u>Basic Python</u>: The Virtual Environment, which the Python can create by default. 
+																	The users have to add the <i>activate</i> file.
+																</li>
+																<li>
+																	<u>Anaconda</u>: If the users use the Anaconda package management, 
+																	they have to add the <i>activate</i> file and the name of Virtual Environment.
+																</li>
+															</ul>
 														</li>
 													</ol>
 												</p>
 												<p>
 													<b>Releases:</b>
 													<ul>
+														<li>
+															<b>1.1.0 - 2023-11-04</b>
+															<br/>
+															Add new fields for Unity ML-Agents Release 21<br/>
+															Add Anaconda support to CLI<br/>
+														</li>
+														<li>
+															<b>1.0.1 - 2023-09-30</b>
+															<br/>
+															Update Github Documentation<br/>
+															ADD Offline Documentation in PDF<br/>
+														</li>
 														<li>
 															<b>1.0.0 - 2023-08-23</b>
 														</li>
