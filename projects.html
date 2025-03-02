@@ -104,14 +104,33 @@
 													<b>Releases:</b>
 													<ul>
 														<li>
+															<b>1.4.0 - 2025-02-27</b>
+															<br/>
+															The Update, LateUpdate and the collision checking support the multithreading.<br/>
+															Thats is why the GameManager and the ComponentManager can use thread safe add and remove functions.<br/>
+															isActiveCollider => !isKinematic
+														</li>
+														<li>
+															<b>1.3.0 - 2025-02-15</b>
+															<br/>
+															The Macros has been renamed for more unique names.<br/>
+															GameObjectManager<br/>
+															FpsShower<br/>
+															Cursor/Mouse events<br/>
+														</li>
+														<li>
 															<b>1.2.0 - 2025-02-05</b>
 															<br/>
-															There are too much changes, it will be too long, if I had to write everything here. <br/>
 															In short, there is no Update(), Render() or LateRender() function in the Game. <br/>
-															But there are these new classes will be called automatically (when they are active). <br/>
-															Please check the
-															<a href="https://github.com/Xardas0327/Learning2DEngine/releases/tag/1.2.0" target="_blank"  class="link-primary"><b>Release</b></a>
-															for more info.
+															But there are these new component classes will be called automatically (when they are active) in ComponentManager.
+															<ol>
+																<li>System::UpdaterComponent</li>
+																<li>System::LateUpdaterComponent</li>
+																<li>Physics::BoxColliderComponent</li>
+																<li>Physics::CircleColliderComponent</li>
+																<li>Render::RendererComponent</li>
+																<li>Render::LateRendererComponent</li>
+															</ol>
 														</li>
 														<li>
 															<b>1.1.0 - 2024-11-28</b>
