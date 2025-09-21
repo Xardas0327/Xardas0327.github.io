@@ -70,24 +70,20 @@
 										<div id="learning2DEngineContent" class="accordion-collapse collapse" aria-labelledby="learning2DEngine" data-bs-parent="#accordionTop">
 											<div class="accordion-body">
 												<p>
-													This project was created for my own development and I want to use this one for reference too.
-													<br/>
-													I have relearned the <b>C++</b> and I have learned the <b>OpenGL</b>.
+													I have relearned the <b>C++</b> and I have learned <b>OpenGL</b>.
 													But I think the Game Engine Architecture book and the Unity Engine also influenced me a lot.
 													<br/>
-													I have created 3 games with it and I believe, that I could create lots of simple games with this game engine now.
+													I have created 3 games with it and I believe that I could create lots of simple games with this game engine now.
 												</p>
 												<p>
-													Futhermore, I know lots of features are missing, some features could be better and why it is Visual Studio Project
-													and not a CMake project. I plan to continue its developing. But I think one full life is not enough for a huge project
-													like a Game Engine (mostly, if I can work on it only in my free time) and we have to accept it,
-													that similar projects will never be completed, just stopped or restarted.
+													The first version, released on 2024-08-29, has since received 10 major updates with in 1 year, incorporating new 
+													features and code improvements
 												</p>
 												<p>
-													 At the moment, it support only <b>Windows 64bit</b> and it use only <b>OpenGL</b> as Graphic API. But who knows, maybe they will change later.
+													 At the moment, it supports only <b>Windows 64bit</b> and it uses only <b>OpenGL</b> as Graphic API. But who knows, maybe they will change later.
 												</p>
 												<p>
-													Please check more info or for documentations on
+													Please check more info or for documentation on
 													<a href="https://github.com/Xardas0327/Learning2DEngine" target="_blank"  class="link-primary"><b>Github</b></a>.
 												</p>
 												<p>
@@ -150,12 +146,12 @@
 															<b>1.4.0 - 2025-02-27</b>
 															<br/>
 															The Update, LateUpdate and the collision checking support the multithreading.<br/>
-															Thats is why the GameManager and the ComponentManager can use thread safe add and remove functions.
+															That is why the GameManager and the ComponentManager can use thread safe add and remove functions.
 														</li>
 														<li>
 															<b>1.3.0 - 2025-02-15</b>
 															<br/>
-															The Macros has been renamed for more unique names.<br/>
+															The macros have been renamed for more unique names.<br/>
 															GameObjectManager<br/>
 															FpsShower<br/>
 															Cursor/Mouse events<br/>
@@ -164,7 +160,7 @@
 															<b>1.2.0 - 2025-02-05</b>
 															<br/>
 															In short, there is no Update(), Render() or LateRender() function in the Game. <br/>
-															But there are these new component classes will be called automatically (when they are active) in ComponentManager.
+															But these new component classes will be called automatically (when they are active) in ComponentManager.
 															<ol>
 																<li>System::UpdaterComponent</li>
 																<li>System::LateUpdaterComponent</li>
@@ -208,9 +204,9 @@
 													<img src="files/images/MLAgentsConfigurationUI/image8.png" alt="MLAgentsConfigurationUI Image 8" data-index="8"/>
 												</div>
 												<p>
-													This project is a user interface for <a href="https://github.com/Unity-Technologies/ml-agents" target="_blank"  class="link-primary">Unity ML-Agents</a>. It helps the users, 
-													that they can <b>create/modify a yaml file inside Unity Editor</b>.
-													Moreover, the users can <b>run the mlagents-learn command without command line</b>.
+													This project is a user interface for <a href="https://github.com/Unity-Technologies/ml-agents" target="_blank"  class="link-primary">Unity ML-Agents</a>.
+													It helps the users that they can <b>create/modify a yaml file inside Unity Editor</b>.
+													Moreover, the users can <b>run the mlagents-learn command without the command line</b>.
 												</p>
 												<p>
 													It is available on <a href="https://github.com/Xardas0327/MLAgentsConfigurationUI" target="_blank"  class="link-primary"><b>Github</b></a> and 
@@ -239,14 +235,14 @@
 															Creation
 															<br/>
 															A user can create parts of the ML-Agents config yaml file as ScriptableObject. 
-															They contains tooltips, validation. Futhermore, the users can see only the actual fields. 
-															For example: If PPO Trainer Type is selected, the specific variables of SAC type is not visible.
+															They contain tooltips, validation. Furthermore, the users can see only the actual fields. 
+															For example: If PPO Trainer Type is selected, the specific variables of SAC type are not visible.
 														</li>
 														<li>
 															Import
 															<br/>
 															A user can import any ML-Agents config yaml file from samples or their own custom project.
-															The files will be created in <i>Assets/Xardas/ML-Agents Configuration/Files</i> folder. 
+															The files will be created in the <i>Assets/Xardas/ML-Agents Configuration/Files</i> folder. 
 															(If the folder doesn't exist, it will be created.)
 															<br/>
 															Limit: If the yaml file has default_settings, it will be part of the Behaviors.
@@ -260,11 +256,11 @@
 														<li>
 															Run Command Line
 															<br/>
-															Firstly, it has to be configureated. It is in <i>Project Settings/ML-Agents Configuration</i>.
-															The users can use <i>Python Virtual Environment</i>, if they want. <br/>
+															Firstly, it has to be configured. It is in <i>Project Settings/ML-Agents Configuration</i>.
+															The users can use the <i>Python Virtual Environment</i>, if they want. <br/>
 															There are 3 options:
 															<ul>
-																<li><u>None</u>: The user don't use Virtual Environment.</li>
+																<li><u>None</u>: The user doesn't use the Virtual Environment.</li>
 																<li>
 																	<u>Basic Python</u>: The Virtual Environment, which the Python can create by default. 
 																	The users have to add the <i>activate</i> file.
@@ -344,13 +340,13 @@
 												</p>
 												<p>
 													The player is a thief, which is not so good, but the gods give him a chance.
-													If the player bring back (steal) artifacts from a museum, Ammut won't eat their heart (Egypt Mythology).
+													If the player brings back (steal) artifacts from a museum, Ammut won't eat their heart (Egypt Mythology).
 													<br />
 													There are 16 artifacts on the map, but the player has to collect only 12. (There are 4 different artifacts.)
 													<br />
 													It is not too easy, because the player has to jump on platforms. If the guards catch them, they will lose 5 years in their life.
-													The age start from 20 and the game end, when the age is 70. Moreover, the artifacts can spawn 27 places, so they are not always on the same place.
-													Futhermore, there are 3 doors (blue, yellow, red), which can be opened by their cards only and the time is ticking.
+													The age starts from 20 and the game ends when the age is 70. Moreover, the artifacts can spawn 27 places, so they are not always in the same place.
+													Furthermore, there are 3 doors (blue, yellow, red), which can be opened by their cards only and the time is ticking.
 													Last, when the player is 40, they will become bigger and a bit slower and when they are 60, they will become a bit more slower.
 												</p>
 												<p>
@@ -384,9 +380,9 @@
 												<p>
 													I  developed a <b>remake</b>  of Ball Challenge with a small independent team using <b>Unity</b>, where I was the lead developer, because
 													I had the most experience with <b>C#</b> and software design/development. At the beginning, it was a small game with 20 levels, but now it has 
-													almost 50 levels with some new feature.
+													almost 50 levels with some new features.
 													<br />
-													Moreover, I would like to highlight, that I developed a map generator, which can generate a map from an image with the basic level functions.
+													Moreover, I would like to highlight that I developed a map generator, which can generate a map from an image with the basic level functions.
 													It is used from June 2022.
 												</p>
 												<p>
@@ -574,7 +570,7 @@
 													This feature is currently in beta.
 												</p>
 												<p>
-													Unfortunatelly, I had to stop this project, because of Google's shutdown of the Daydream platform.
+													Unfortunately, I had to stop this project, because of Google's shutdown of the Daydream platform.
 													Moreover, Google doesn't support Daydream on Android 11, so it is not 100% that the game will work. (It works on Pixel 2.)
 													It was available in Google Play Store until 2023-08-24.
 												</p>
@@ -631,7 +627,7 @@
 													I implemented the following:
 													<ul>
 														<li>Account management</li>
-														<li>Character management (character creater, level up, learn)</li>
+														<li>Character management (character creator, level up, learn)</li>
 														<li>Time (real and game)</li>
 														<li>Friendly NPC (Vendor,Trainer,Speech,Quest)</li>
 														<li>Enemy NPC (animals with AI)</li>
@@ -646,10 +642,10 @@
 													Unfortunately I had to stop this project, because I found some bugs in the mod, which I can't fix.
 													Sometimes, when someone dies (no matter if a player or a NPC) the server shuts down. I am sure that my code is right,
 													because the server doesn't have any error messages and it can only happen if someone has a bigger ping in the game.
-													On localhost, it never happened. That was one of the reasons that the mod creators started to rewrite it from the begining.
+													On localhost, it never happened. That was one of the reasons that the mod creators started to rewrite it from the beginning.
 												</p>
 												<p>
-													Currently THQ holds licence of the game.
+													Currently THQ holds the licence of the game.
 													<br/>
 													This is just a reference work on
 													<a href="https://github.com/Xardas0327/Gothic-2-MMORPG" target="_blank"  class="link-primary">
@@ -689,10 +685,10 @@
 													<img src="files/images/Ballziez/image6.png" alt="Ballziez Image 6" data-index="6"/>
 												</div>
 												<p>
-													I  developed a <b>1v1 competitive game</b> with a small independent team using <b>Unity</b> and it's <b>new multiplayer services</b> (Lobby, Relay, Netcode for GameObjects).
+													I  developed a <b>1v1 competitive game</b> with a small independent team using <b>Unity</b> and its <b>new multiplayer services</b> (Lobby, Relay, Netcode for GameObjects).
 													<br />
-													The players controll a ball and they are able to kick out each other from the map. But they have to be careful, because the pieces of the map are falling and the players find boosts (streng, speed, armor) on the maps.
-													Moreover, there are more maps and they can fall apart more ways. Futhermore, we use similar map generator, which I have created for Ball challenges.
+													The players control a ball and they are able to kick out each other from the map. But they have to be careful, because the pieces of the map are falling and the players find boosts (strength, speed, armor) on the maps.
+													Moreover, there are more maps and they can fall apart in more ways. Furthermore, we use a similar map generator, which I have created for Ball challenges.
 													<br /><br />
 													The development time was 2 months.
 													<br />
